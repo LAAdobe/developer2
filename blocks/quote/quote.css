@@ -1,16 +1,4 @@
 
 .blockquote {
-    background-color: var(--overlay-background-color);
-}
-
-.blockquote > div:first-child {
     color: blue;
-    font-size: 2em;
-    padding: 0.2em;
-}
-
-.blockquote > div:last-child {
-    color: darkgray;
-    padding-left: 2em;
-    padding-bottom: 1em;
 }
