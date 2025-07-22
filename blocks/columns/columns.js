@@ -1,4 +1,6 @@
-export default function decorate(block) {
+// export default function decorate(block) {
+function decorate(block) {
+
   const cols = [...block.firstElementChild.children];
   block.classList.add(`columns-${cols.length}-cols`);
 
@@ -16,3 +18,11 @@ export default function decorate(block) {
     });
   });
 }
+
+// Auto-enhance simple 2-column tables for demo
+document.querySelectorAll('table').forEach((table) => {
+  const firstRow = table.rows[0];
+  if (firstRow && firstRow.cells.length === 2) {
+    table.classList.add('columns-block');
+  }
+});

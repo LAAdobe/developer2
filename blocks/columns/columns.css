@@ -31,3 +31,19 @@
     order: unset;
   }
 }
+
+
+/* Auto-enhanced Columns Block from <table> */
+.columns-block {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.columns-block td {
+  flex: 1;
+  padding: 1rem;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+}
+
